@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="search"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="https://formsubmit.io/send/your-email@example.com" method="POST">
+        <input
+            type="search"
+            name="search_query"
+            placeholder="Search anything..."
+            required
+        >
+
+        <!-- Optional: redirect after submission -->
+        <input
+            type="hidden"
+            name="_redirect"
+            value="https://www.google.com"
+        >
+
+        <button type="submit">Search</button>
+    </form>
+
+</body>
+</html>
